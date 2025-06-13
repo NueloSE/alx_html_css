@@ -27,13 +27,10 @@ Requires that i build a landing page for smileschool.
 
 <figure>
   <figcaption>desktop view: </figcaptioni><br>
-  <img src='./images/desktop view.png' >
+  <img src='./images/large-screen-view.svg' width='400px' height='800px'>
 </figure>
 
-### Links
 
-- Solution URL: [Add solution URL here](https://github.com/NueloSE/fe-mentors/tree/main/testimonials-grid-section-main)
-- Live Site URL: [Add live site URL here](https://testimonial-card-delta-nine.vercel.app/)
 
 ## My process
 
