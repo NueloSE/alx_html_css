@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding-left: 3rem;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', serif;
+    font-weight: 900;
+}
+
+.logo a{
+    padding-right: 5rem;
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+}
+
+
