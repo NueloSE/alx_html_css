@@ -1,0 +1,234 @@
+@layer reset {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Holberton;
+  }
+
+  :root {
+    --white: #fff;
+    --pink: #ff6565;
+  }
+}
+
+@layer components {
+    .title {
+        text-align: center;
+        margin: 110px 0 40px 0;
+    }
+    .small-wide {
+        max-width: 637px;
+        text-align: center;
+        margin-inline:  auto;
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .wider {
+        max-width: 1002px;
+        text-align: center;
+        margin: 100px auto;
+        line-height: 26px;
+        font-size: 14px;
+    }
+
+    .flex-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+#contact {
+  width: 335px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #979797;
+  padding: .75rem 0 .75rem 0.3rem;
+}
+
+input + input {
+  margin-block-start: 2rem;
+  
+}
+
+input::placeholder {
+  font-weight: bold;
+  fill: #071629;  
+
+}
+
+.card {
+    width: 207px;
+}
+
+#result {
+  background-image: url('./images/headphones_hero_2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: left;
+  color: var(--white);
+
+  padding: 100px 0 75px 0;
+
+}
+
+.count {
+  background-image: url('images/pentagone.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 190px;
+  height: 190px;
+  border: 2px solid blue;
+
+}
+
+.count h3  {
+  font-size: 46px;
+  margin: 70px 0 11px 0;
+}
+
+header {
+  background-image: url("./images/headphones_hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 0;
+  padding-bottom: 115px;
+}
+
+.header-logo {
+  width: 160px;
+  height: 32px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 27px;
+}
+.nav-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 41px;
+}
+
+.nav-link li {
+  list-style: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: "Source Sans Pro";
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+  color: #ff6565;
+}
+
+.hero {
+  color: var(--white);
+  max-width: 637px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 312px;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button {
+  color: var(--white);
+  background-color: var(--pink);
+  margin: 40px 0 65px 0;
+  padding: 13px 31px;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.hero-description2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 115px;
+  line-height: 26px;
+}
+
+/*tablet*/
+@media (min-width: 481px) and (max-width: 975px) {
+  nav {
+    max-width: 633px;
+    margin: 0 auto;
+  }
+  .wider {
+    max-width: 472px;
+  }
+}
+
+/*mobile version*/
+@media (width < 480px) {
+  nav {
+    display: block;
+  }
+
+  .handburger div {
+    width: 20px;
+    height: 2px;
+    background-color: var(--white);
+    gap: 4px;
+    border-radius: 5px;
+  }
+
+  .handburger div:nth-child(2) {
+    width: 13px;
+    margin: 4px 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 66px;
+  }
+
+  .nav-link {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 60px;
+    display: none;
+  }
+}
+
+@layer utility{
+    .icon {
+        color: var(--pink);
+        font-size: 94px;
+    }
+
+}
