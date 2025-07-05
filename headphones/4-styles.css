@@ -181,6 +181,33 @@ button:active {
   line-height: 26px;
 }
 
+footer {
+  background-color: #071629;
+  color: var(--white);
+  text-align: center;
+  padding: 91px 0 31px 0;
+  color: grey;
+}
+
+footer span {
+  color: var(--white);
+  padding-right: 20px;
+}
+.img-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 71px;
+}
+
+.footer-logo {
+  width: 161px;
+  height: 32px;
+}
+
+
+
+
 /*tablet*/
 @media (min-width: 481px) and (max-width: 975px) {
   nav {
@@ -189,13 +216,28 @@ button:active {
   }
   .wider {
     max-width: 472px;
+    gap: 42px;
   }
+
 }
 
 /*mobile version*/
 @media (width < 480px) {
   nav {
     display: block;
+    padding-left: 2rem;
+  }
+
+  header {
+    background-size: auto;
+    background-position: -350px 0px;
+  }
+
+  #result {
+    background-size:cover ;
+    background-clip: content-box;
+    background-position: -500px 0px;
+  
   }
 
   .handburger div {
@@ -223,6 +265,28 @@ button:active {
     padding-top: 20px;
     padding-left: 60px;
     display: none;
+  }
+  .wider {
+    max-width: 207px;
+    gap: 42px;
+  }
+  .small-wide {
+    max-width: 325px;
+
+  }
+
+  .img-icon {
+    flex-direction: column;
+    margin: 0 auto 45px 0;
+    gap: 45px;
+  }
+
+  .img-icon div {
+    margin-left: 3rem;
+  }
+
+  .hide {
+    display: block;
   }
 }
 
